@@ -1,0 +1,34 @@
+/* Fondo oscuro tipo Bootstrap */
+.bg-body-tertiary {
+  
+}
+.navHeader {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+  align-items: center;
+
+}
+
+/* Marca (React-Bootstrap) */
+.bg-body-tertiary .navbar-brand {
+  font-weight: 500;
+  font-size: 1.25rem;
+
+}
+
+/* Links del menú */
+.bg-body-tertiary .nav-link,
+.bg-body-tertiary .dropdown-toggle {
+
+  font-weight: 400;
+  font-size: 0.95rem;
+  margin-right: 0.75rem;
+}
+
+
+
+/* Quitar subrayados en enlaces */
+.bg-body-tertiary a {
+  text-decoration: none;
+}
