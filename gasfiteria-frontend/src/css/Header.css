@@ -1,34 +1,23 @@
 /* wea principal */
 .bg-body-tertiary {
-  
+  padding: 10px 10px 10px 10px;   
+  border-bottom: 3px solid #000; padding-bottom: 10px;
 }
+
 .navHeader {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  gap: 10px;
+  gap: 15px;
   align-items: center;
-
 }
-
-/* Marca (React-Bootstrap) */
-.bg-body-tertiary .navbar-brand {
-  font-weight: 500;
-  font-size: 1.25rem;
-
-}
-
-/* Links del menú */
-.bg-body-tertiary .nav-link,
-.bg-body-tertiary .dropdown-toggle {
-
-  font-weight: 400;
-  font-size: 0.95rem;
-  margin-right: 0.75rem;
-}
-
-
 
 /* Quitar subrayados en enlaces */
 .bg-body-tertiary a {
   text-decoration: none;
+}
+
+.bg-body-tertiary .nav-link, .bg-body-tertiary {
+    font-weight: 900;
+    font-size: 1.1rem;
+    margin-right: 0.75rem;
 }
