@@ -1,9 +1,9 @@
+import "../css/Footer.css";
 
 import { Container } from 'react-bootstrap';
-import "../css/Footer.css";
 function Footer() {
   return (
-    <footer className="main-footer bg-success text-white mt-5 p-4">
+    <footer className="main-footer mt-5 p-4">
         <Container className='contenedor'>
           <div className="footer-section links mb-4 mb-md-0 text-center text-md-start"> 
             <h3 className="titulos">Sobre Nosotros</h3>
@@ -19,22 +19,22 @@ function Footer() {
             <h3 className="titulos">Enlaces Rápidos</h3>
             <ul className="list-unstyled">
               <li>
-                <a href="/" className="text-white text-decoration-none">Inicio</a>
+                <a href="HomePage" className="text-black text-decoration-none">Inicio</a>
               </li>
               <li>
-                <a href="/" className="text-white text-decoration-none">Servicios</a>
+                <a href="Servicios" className="text-black text-decoration-none">Servicios</a>
               </li>
               <li>
-                <a href="/" className="text-white text-decoration-none">Productos</a>
+                <a href="Productos" className="text-black text-decoration-none">Productos</a>
               </li>
               <li>
-                <a href="/" className="text-white text-decoration-none">Agenda</a>
+                <a href="Agenda" className="text-black text-decoration-none">Agenda</a>
               </li>
               <li>
-                <a href="/" className="text-white text-decoration-none">Contacto</a>
+                <a href="Contacto" className="text-black text-decoration-none">Contacto</a>
               </li>
               <li>
-                <a href="/" className="text-white text-decoration-none">Política de Privacidad</a>
+                <a href="PoliticaPrivacidad" className="text-black text-decoration-none">Política de Privacidad</a>
               </li>
             </ul>
           </div>

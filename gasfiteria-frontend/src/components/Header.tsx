@@ -1,18 +1,18 @@
+import "../css/Header.css";
 
 import { Navbar, Container, Nav, Image} from 'react-bootstrap';
-import "../css/Header.css";
 import LogoPagina from '../images/logo_pagina.png';
 
 function NavbarHeader() {
     return (
         <>
-        <Navbar expand="lg" className="bg-body-tertiary">
+        <Navbar expand="lg" className="navbar">
         <Container className='navHeader'>
 
 
             <Navbar>
                 <Container>
-                <Navbar.Brand href="#home">
+                <Navbar.Brand href="HomePage">
                     <Image
                     src={LogoPagina}
                     fluid
@@ -25,12 +25,12 @@ function NavbarHeader() {
                 </Container>
             </Navbar>
 
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Servicios</Nav.Link>
-            <Nav.Link href="#link">Productos</Nav.Link>
-            <Nav.Link href="#link">Agenda</Nav.Link>
-            <Nav.Link href="#link">Sobre Nosotros</Nav.Link>
-            <Nav.Link href="#link">Registrate / Inicio Sesión</Nav.Link>
+            <Nav.Link href="HomePage">Home</Nav.Link>
+            <Nav.Link href="Servicios">Servicios</Nav.Link>
+            <Nav.Link href="Productos">Productos</Nav.Link>
+            <Nav.Link href="Agenda">Agenda</Nav.Link>
+            <Nav.Link href="SobreNosotros">Sobre Nosotros</Nav.Link>
+            <Nav.Link href="Registro">Registrate / Inicio Sesión</Nav.Link>
           
         </Container>
         </Navbar>
