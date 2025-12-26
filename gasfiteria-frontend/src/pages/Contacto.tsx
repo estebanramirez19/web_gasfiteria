@@ -5,9 +5,9 @@ function Contacto() {
     <>
 
 
-        <div>hola mundo</div>
+        <div>Contacto</div>
     </>
   );
 }
-Contacto
+
 export default Contacto;

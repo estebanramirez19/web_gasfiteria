@@ -6,7 +6,7 @@ function Registro() {
     <>
 
 
-        <div>hola mundo</div>
+        <div>Registro</div>
     </>
   );
 }

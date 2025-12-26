@@ -6,7 +6,7 @@ function Servicios() {
     <>
 
 
-        <div>hola mundo</div>
+        <div>Servicios</div>
     </>
   );
 }

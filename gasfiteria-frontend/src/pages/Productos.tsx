@@ -6,7 +6,7 @@ function Productos() {
     <>
 
 
-        <div>hola mundo</div>
+        <div>productos</div>
     </>
   );
 }

@@ -5,7 +5,7 @@ function Agenda() {
     <>
 
 
-        <div>hola mundo</div>
+        <div>agenda</div>
     </>
   );
 }

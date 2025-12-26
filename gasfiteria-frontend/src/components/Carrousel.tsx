@@ -17,19 +17,19 @@ function Carousel() {
     return (
         <XCarousel activeIndex={index} onSelect={handleSelect}>
             <XCarousel.Item>
-                <Image src={Imagen1} alt="Imagen 1" fluid className="" style={{height:'250px', width: '918px', padding: '10px 10px 0px 0px', left: '0px'}}/>
+                <Image src={Imagen1} alt="Imagen 1" fluid className="" style={{height:'250px', width: '97%', padding: '10px 10px 0px 0px', left: '0px'}}/>
                 <XCarousel.Caption>
                     <h3 className='letras'>Instalaciones</h3>
                 </XCarousel.Caption>
             </XCarousel.Item>
             <XCarousel.Item>
-                <Image src={Imagen2} alt="Imagen 2" fluid className="" style={{height:'250px', width: '918px', padding: '10px 10px 0px 0px',left: '0px'}}/>
+                <Image src={Imagen2} alt="Imagen 2" fluid className="" style={{height:'250px', width: '97%', padding: '10px 10px 0px 0px',left: '0px'}}/>
                 <XCarousel.Caption>
                     <h3 className='letras'>Reparaciones</h3>
                 </XCarousel.Caption>
             </XCarousel.Item>
             <XCarousel.Item>
-                <Image src={Imagen3} alt="Imagen 3" fluid className="" style={{height:'250px', width: '918px', padding: '10px 10px 0px 0px',left: '0px'}}/>
+                <Image src={Imagen3} alt="Imagen 3" fluid className="" style={{height:'250px', width: '97%', padding: '10px 10px 0px 0px',left: '0px'}}/>
                 <XCarousel.Caption>
                     <h3 className='letras'>Calefont</h3>
                 </XCarousel.Caption>

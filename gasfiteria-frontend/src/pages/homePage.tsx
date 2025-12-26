@@ -6,7 +6,7 @@ function HomePage() {
     <>
       <Carousel />
 
-        <div>hola mundo</div>
+        <div>inicio</div>
     </>
   );
 }
