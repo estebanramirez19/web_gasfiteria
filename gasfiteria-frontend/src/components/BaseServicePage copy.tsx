@@ -1,19 +1,23 @@
+
+
 import { Card, Button, Image } from 'react-bootstrap'; 
+import { Link } from 'react-router-dom';
 
-/*todo esto esta pensado en la carta de productos horizontal */
-
-interface ProductCardHorizontalProps {
-  
-  title: string;
-  description: string;
-  imageUrl: string;
-  price: string;
-  altText?: string;
-  link: string;
-}
+/*todo esto esta pensado en mostrar todo sobre el servicio */
 
 
-function ProductCardHorizontal({ title, description, imageUrl, price, altText,link }: ProductCardHorizontalProps) {
+
+
+function ServiceCardHorizontal({ 
+  id,
+  title, 
+  subtitle, 
+  description,
+  imageUrl, 
+  price, 
+  altText,
+  link 
+}: ServiceCardHorizontalProps) {
   return (
     <Card style={{ width: '18rem' }}>
       <Card.Img 
@@ -26,6 +30,7 @@ function ProductCardHorizontal({ title, description, imageUrl, price, altText,li
       <Card.Body className="d-flex flex-column">{/* d-flex flex-column para organizar el contenido verticalmente */}
 
         <Card.Title>{title}</Card.Title>
+        <Card.Subtitle className="mb-2 text-muted">{subtitle}</Card.Subtitle>
         <Card.Text>{description}</Card.Text>
         <Card.Text className="fs-4 fw-bold mb-1">${price}.-</Card.Text>
 
@@ -35,26 +40,28 @@ function ProductCardHorizontal({ title, description, imageUrl, price, altText,li
           <Button 
             variant="success" // Color verde de Bootstrap
             // Si usas React Router: as={Link} to={buyLink || '#'}
-            href={link} // Si no usas React Router
+            as={link} 
+            to={link} 
             className="w-100" // w-100 para que el botón ocupe todo el ancho disponible
           >
-            Comprar Ahora
+            Agendar Ahora
           </Button>
           <Button 
             variant="success" // Color verde de Bootstrap
             // Si usas React Router: as={Link} to={buyLink || '#'}
-            href={link} // Si no usas React Router
+            as={link} 
+            to={link}  
             className="w-100" // w-100 para que el botón ocupe todo el ancho disponible
           >
-            Agregar Producto
+            Agregar Servicio
           </Button>
 
         </div>
-    
+
       </Card.Body>
     </Card>
   );
 }
 
 
-export default ProductCardHorizontal;
+export default ServiceCardHorizontal;

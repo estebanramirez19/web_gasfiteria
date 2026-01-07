@@ -5,7 +5,7 @@ import { Card, Button, Image } from 'react-bootstrap';
 interface ServiceCardHorizontalProps {
   
   title: string;
-  subtitle: string;
+
   description: string;
   imageUrl: string;
   price: string;
@@ -14,7 +14,7 @@ interface ServiceCardHorizontalProps {
 }
 
 
-function ServiceCardHorizontal({ title, subtitle, description, imageUrl, price, altText,link }: ServiceCardHorizontalProps) {
+function ServiceCardHorizontal({ title, description, imageUrl, price, altText,link }: ServiceCardHorizontalProps) {
   return (
     <Card style={{ width: '18rem' }}>
       <Card.Img 
@@ -27,7 +27,6 @@ function ServiceCardHorizontal({ title, subtitle, description, imageUrl, price, 
       <Card.Body className="d-flex flex-column">{/* d-flex flex-column para organizar el contenido verticalmente */}
 
         <Card.Title>{title}</Card.Title>
-        <Card.Subtitle className="mb-2 text-muted">{subtitle}</Card.Subtitle>
         <Card.Text>{description}</Card.Text>
         <Card.Text className="fs-4 fw-bold mb-1">${price}.-</Card.Text>
 
@@ -37,7 +36,7 @@ function ServiceCardHorizontal({ title, subtitle, description, imageUrl, price, 
           <Button 
             variant="success" // Color verde de Bootstrap
             // Si usas React Router: as={Link} to={buyLink || '#'}
-            href="{link}" // Si no usas React Router
+            href={link} // Si no usas React Router
             className="w-100" // w-100 para que el botón ocupe todo el ancho disponible
           >
             Agendar Servicio
